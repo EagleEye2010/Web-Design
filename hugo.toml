@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Eli's Web Design Business"
+theme = 'Hugo Profile'
+
+[params]
+  title = "Eli's Web Design"
+  description = "Official website of Eli's Web Design."
+  animate = true
+
+  [params.hero]
+    enable = true
+    intro = "Official website of"
+    title = "Eli's Web Design"
+    subtitle = "We build affordable websites at exceptional performance."
+  
+  [params.about]
+    enable = true
+    title = "About Us"
+    content = "We are a team of software developers who help small businesses acheive their digital goals at the highest performance with the most affordable price.\n"
+    [params.about.skills]
+      enable = true
+      title = "Here are some of our services we offer: "
+      items = ["Website Creation", "Website Hosting", "Mobile App Development", "Online Store Integration", "Custom Requests"]
+    
+  [params.experience]
+    enable = true
+    [[params.experience.items]]
+    job = "Custom Website Developement"
+    company = "Arete Enrichment Academy"
+    companyUrl = "https://tuition.pages.dev"
+    date = "June 2024"
+    content = "We made a custom tuition calculator that no web builder would ever provide."
