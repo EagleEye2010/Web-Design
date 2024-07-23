@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Five Web Design</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on Five Web Design</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jul 2024 09:27:43 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now Hiring</title>
+      <link>http://localhost:1313/blogs/hiring/</link>
+      <pubDate>Fri, 12 Jul 2024 09:27:43 -0400</pubDate>
+      <guid>http://localhost:1313/blogs/hiring/</guid>
+      <description>We are now hiring! With high growth, we are seeking independent contractors to help keep up with continued demand for our websites. We will gladly pay $85.00 per static website built. Developers must know how to make a website with HTML, CSS, and JS. Knowledge of Hugo is not required but will make for a better candidate.&#xA;Want to apply? Send us a demo website of your skills to EliVanV2010@hotmail.com along with your application.</description>
+    </item>
+  </channel>
+</rss>

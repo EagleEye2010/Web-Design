@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Eli&#39;s Web Design Business</title>
+    <title>Blogs on Five Web Design</title>
     <link>http://localhost:1313/blogs/</link>
-    <description>Recent content in Blogs on Eli&#39;s Web Design Business</description>
+    <description>Recent content in Blogs on Five Web Design</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2024 09:27:43 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2024 09:56:08 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Us Vs. Website Builders</title>
+      <link>http://localhost:1313/blogs/vswebbuilder/</link>
+      <pubDate>Sat, 13 Jul 2024 09:56:08 -0400</pubDate>
+      <guid>http://localhost:1313/blogs/vswebbuilder/</guid>
+      <description>You may have heard of website builders such as Wix, GoDaddy, or SquareSpace. Why choose us over them? Well, first we should consider the cost.&#xA;Wix: $204.00/yr GoDaddy: $131.88/yr (for the first year, then $155.88/yr) SquareSpace: $172.00/yr How much do we cost? We charge only $60.00/yr, including a custom domain. Note that this doesn&amp;rsquo;t include the website itself (only hosting). We will build a static website for $100.00, including custom functionality.</description>
+    </item>
     <item>
       <title>Now Hiring</title>
       <link>http://localhost:1313/blogs/hiring/</link>

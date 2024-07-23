@@ -2,6 +2,8 @@
 title = 'Now Hiring'
 date = 2024-07-12T09:27:43-04:00
 draft = false
+tags = ['hiring','blog','press']
+categories = ['hiring','blog','press']
 +++
 
 # We are now hiring!

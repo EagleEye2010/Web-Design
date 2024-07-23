@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/5WD.png type="image/gif">
+<link rel="icon" href=/fav.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,17 +31,18 @@
   
 
 
-<meta property="og:url" content="http://localhost:1313/404.html">
-  <meta property="og:site_name" content="Five Web Design">
-  <meta property="og:title" content="404 Page not found">
-  <meta property="og:description" content="Official website of 5 Web Design.">
+<meta property="og:url" content="http://localhost:1313/blogs/websites/">
+  <meta property="og:site_name" content="Eli&#39;s Web Design Business">
+  <meta property="og:title" content="Eli&#39;s Web Design Business">
+  <meta property="og:description" content="Official website of Eli&#39;s Web Design.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="404 Page not found">
-  <meta name="twitter:description" content="Official website of 5 Web Design.">
+  <meta name="twitter:title" content="Eli&#39;s Web Design Business">
+  <meta name="twitter:description" content="Official website of Eli&#39;s Web Design.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -103,14 +104,18 @@
 
 
 
-<meta name="description" content=Official&#32;website&#32;of&#32;5&#32;Web&#32;Design.>
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
   
 
   <title>
-Five Web Design | 404 page not found
+ | Eli&#39;s Web Design Business
 
   </title>
 </head>
@@ -147,12 +152,15 @@ Five Web Design | 404 page not found
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                <img src="/5WD.png" width="30" height="30"
-                    class="d-inline-block align-top">
-                5 Web Design
+                Eli&#39;s Web Design
                 
             </a>
 
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
             
 
             
@@ -166,6 +174,12 @@ Five Web Design | 404 page not found
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
                     
 
                     
@@ -239,10 +253,100 @@ Five Web Design | 404 page not found
     </nav>
 </header>
 <div id="content">
-<div class="container py-5 text-center">
-    <img src="/404.png" alt='404 page not found' class="img-fluid" width="40%">
-    <h1>404 page not found</h1>
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4"></h1>
+            <div class="text-center">
+              
+              Jan 1, 0001
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents"></nav>
+              </div>
+          </aside>
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  false ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
 
   </div><footer>
     
@@ -261,13 +365,6 @@ Five Web Design | 404 page not found
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            
-                <div class="pb-2">
-                    <a href="http://localhost:1313/" title="Five Web Design">
-                        <img alt="Footer logo" src="/5WD.png"
-                            height="40px" width="40px">
-                    </a>
-                </div>
             
             &copy; 2024  All Rights Reserved
  Five Web Design
@@ -303,6 +400,8 @@ Five Web Design | 404 page not found
 
 </script>
 
+
+    <script src="/js/search.js"></script>
 
 
 

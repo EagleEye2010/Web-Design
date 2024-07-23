@@ -1,23 +1,35 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = "Eli's Web Design Business"
+title = "Five Web Design"
 theme = 'Hugo Profile'
 
+[[Menus.main]]
+identifier = "blog"
+name = "Press"
+title = "From our press"
+url = "/blogs"
+weight = 1
+
+[params.navbar]
+  disableSearch = true
+
 [params]
-  title = "Eli's Web Design"
-  description = "Official website of Eli's Web Design."
+  title = "5 Web Design"
+  description = "Official website of 5 Web Design."
   animate = true
+  favicon = "/5WD.png"
 
   [params.hero]
     enable = true
     intro = "Official website of"
-    title = "Eli's Web Design"
-    subtitle = "We build affordable websites at exceptional performance."
+    title = "Five Web Design"
+    subtitle = "We build affordable websites with exceptional performance."
+    image = "/5WD.png"
   
   [params.about]
     enable = true
     title = "About Us"
-    content = "We are a team of software developers who help small businesses acheive their digital goals at the highest performance with the most affordable price.\n"
+    content = "We help small businesses acheive their digital needs with the highest performance and the most affordable cost.\n"
     [params.about.skills]
       enable = true
       title = "Here are some of our services we offer: "
@@ -28,6 +40,22 @@ theme = 'Hugo Profile'
     [[params.experience.items]]
     job = "Custom Website Developement"
     company = "Arete Enrichment Academy"
-    companyUrl = "https://tuition.pages.dev"
+    companyUrl = "https://areteenrichmentacademy.org"
     date = "June 2024"
     content = "We made a custom tuition calculator that no web builder would ever provide."
+
+    [params.experience.items.featuredLink]
+      enable = true
+      url = "https://tuition.pages.dev"
+      name = "Check it out"
+
+  [params.singlePages]
+    socialShare = false
+
+    [params.singlePages.readTime]
+      enable = true
+      content = "min read"
+    [params.singlePages.scrollprogress]
+      enable = true
+    [params.singlePages.tags]
+      openInNewTab = true
